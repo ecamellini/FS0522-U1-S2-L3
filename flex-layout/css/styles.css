@@ -29,7 +29,6 @@ header {
 #main {
   display: flex;
   flex-grow: 1;
-  justify-content: center;
 }
 
 #sidebar {
@@ -45,7 +44,6 @@ header {
   justify-content: flex-start;
   padding: 20px;
   align-content:flex-start;
-  max-width: 600px;
 }
 
 .box {
