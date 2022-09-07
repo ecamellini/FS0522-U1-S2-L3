@@ -1,0 +1,90 @@
+html,body {
+  height: 100%;
+}
+
+#container {
+  width: 100%;
+  height: 100%;
+}
+
+#main-content {
+  margin: 0 auto;
+  max-width: 600px;
+  height: 100%;
+}
+
+.main-section {
+  border: 1px solid gray;
+  margin-bottom: 20px;
+  min-height: 200px;
+}
+
+.box {
+  background-color: orange;
+  border: 1px solid orangered;
+  margin: 10px;
+  height: 30px;
+  width: 80px;
+}
+
+#row {
+  display: flex;
+  flex-direction: row;
+}
+
+#row .box:first-of-type {
+  flex-grow: 1;
+  max-width: 200px;
+}
+
+#row div:nth-of-type(2) {
+  flex-grow: 1;
+}
+
+#column {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#column .box:first-of-type {
+  flex-grow: 1;
+}
+
+#row-reverse {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  justify-content: space-around;
+}
+
+#column-reverse {
+  display: flex;
+  flex-direction: column-reverse;
+}
+
+#wrap-and-media-query {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+@media (max-width: 400px) {
+  #wrap-and-media-query {
+    flex-direction: column;
+  }
+}
+
+#shrink {
+  display: flex;
+  overflow-x: scroll;
+}
+
+#shrink .box {
+  flex-shrink: 0;
+}
+
+#shrink .box:first-of-type {
+  flex-shrink: 1;
+}
+
